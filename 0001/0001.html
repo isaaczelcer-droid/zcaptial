@@ -17,7 +17,8 @@
     .highlight { background-color: #effff7; font-weight: bold; }
     .footer { margin-top: 40px; text-align: center; font-size: 14px; color: #666; }
     .page { page-break-before: always; }
-    .listing img { width: 100%; max-width: 800px; margin: 20px auto; border-radius: 8px; display: block; }
+    .listing { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin: 20px 0; }
+    .listing img { width: 100%; border-radius: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
     .commitment { font-style: italic; color: #0a3d62; background: #f0f8ff; padding: 15px; border-left: 4px solid #0a3d62; margin: 20px 0; }
     .file-id { font-weight: bold; color: #0a3d62; text-align: right; margin-bottom: 10px; }
   </style>
@@ -54,28 +55,7 @@
     <p>East Coast Ventures is a private investment group with over $45M in closed transactions in the last 24 months. We specialize in quick-close, all-cash acquisitions of stabilized multifamily and commercial assets.</p>
   </div>
 
-  <!-- PAGE 2: PROPERTY PHOTOS & DETAILS -->
-  <div class="page">
-    <h2>Property Overview</h2>
-    <div class="listing">
-      <img src="../0001_files/photo1.jpg" alt="Front exterior">
-      <img src="../0001_files/photo2.jpg" alt="Aerial view">
-      <img src="../0001_files/floorplan.png" alt="Floor plan">
-    </div>
-
-    <table>
-      <tr><th>Year Built</th><td>2010</td></tr>
-      <tr><th>Sq Ft</th><td>1,767</td></tr>
-      <tr><th>Beds/Baths</th><td>3 / 2</td></tr>
-      <tr><th>Lot Size</th><td>7,793 sq ft</td></tr>
-      <tr><th>Taxes</th><td>$4,392.75 / yr</td></tr>
-      <tr><th>Heating</th><td>Baseboard, Electric</td></tr>
-      <tr><th>Garage</th><td>Attached</td></tr>
-      <tr><th>Basement</th><td>Full (Finished)</td></tr>
-    </table>
-  </div>
-
-  <!-- PAGE 3: CASH FLOW & FEES -->
+  <!-- PAGE 2: CASH FLOW & FEES -->
   <div class="page">
     <h2>Cash Flow — +$385/mo</h2>
     <table>
@@ -111,7 +91,7 @@
     </ul>
   </div>
 
-  <!-- PAGE 4: 5-YEAR HOLD & FLIP -->
+  <!-- PAGE 3: 5-YEAR HOLD & FLIP -->
   <div class="page">
     <h2>5-Year Hold & Flip at End</h2>
     <ul>
@@ -134,7 +114,7 @@
     </table>
   </div>
 
-  <!-- PAGE 5: ROI SUMMARY -->
+  <!-- PAGE 4: ROI SUMMARY -->
   <div class="page">
     <h2>ROI Summary — Worst / OK / Best</h2>
     <table>
@@ -151,6 +131,36 @@
       <tr><td>50% (2 investors)</td><td>$42,750</td><td>$11,550</td><td>$116,000</td><td>$127,550</td><td>+298%</td></tr>
       <tr><td>25% (4 investors)</td><td>$21,375</td><td>$5,775</td><td>$58,000</td><td>$63,775</td><td>+298%</td></tr>
     </table>
+  </div>
+
+  <!-- PAGE 5: PROPERTY LISTING & PHOTOS (AT BOTTOM) -->
+  <div class="page">
+    <h2>Property Listing & Photos</h2>
+    <div class="listing">
+      <img src="../0001_files/NB128827_1.jpg" alt="MLS Photo 1">
+      <img src="../0001_files/NB128827_2.jpg" alt="MLS Photo 2">
+      <img src="../0001_files/NB128827_3.jpg" alt="MLS Photo 3">
+      <img src="../0001_files/NB128827_4.jpg" alt="MLS Photo 4">
+      <img src="../0001_files/NB128827_5.jpg" alt="MLS Photo 5">
+      <img src="../0001_files/NB128827_6.jpg" alt="MLS Photo 6">
+      <img src="../0001_files/NB128827_7.jpg" alt="MLS Photo 7">
+      <img src="../0001_files/NB128827_8.jpg" alt="MLS Photo 8">
+    </div>
+
+    <h3>Property Details</h3>
+    <table>
+      <tr><th>Year Built</th><td>2010</td></tr>
+      <tr><th>Sq Ft</th><td>1,767</td></tr>
+      <tr><th>Beds/Baths</th><td>3 / 2</td></tr>
+      <tr><th>Lot Size</th><td>7,793 sq ft</td></tr>
+      <tr><th>Taxes</th><td>$4,392.75 / yr</td></tr>
+      <tr><th>Heating</th><td>Baseboard, Electric</td></tr>
+      <tr><th>Garage</th><td>Attached</td></tr>
+      <tr><th>Basement</th><td>Full (Finished)</td></tr>
+    </table>
+
+    <h3>Description</h3>
+    <p>Charming 2+1 bedroom split entry in Lakeview Heights, East Saint John. Welcome to this super cute and well maintained split entry home in the heart of Lakeview Heights, one of East Saint Johns most convenient and family-friendly neighbourhoods. Youll love the location, just minutes from all east side retail, restaurants and amenities, plus easy access to the Rez for hiking, biking and outdoor recreation. The home sits on the bus route and within walking distance to the local elementary school, making it ideal for young families or first-time buyers. Step inside to a bright, welcoming main level featuring an open concept kitchen, dining and  living area. 2 comfortable bedrooms and a full bathroom complete this level. From the dining area, sliding patio doors lead to your backyard oasis with a back deck, fire pit patio area, level yard for the kids and dog to play and a handy storage shed. Downstairs, youll find a spacious and versatile lower level that currently serves as the primary bedroom suite, complete with a custom walk-in closet, full bathroom with laundry and a large family room or home office area offering plenty of flexibility for your lifestyle. If you've been looking for an affordable, move-in-ready home in a great neighbourhood this is it! (29151828)</p>
   </div>
 
   <div class="footer">
