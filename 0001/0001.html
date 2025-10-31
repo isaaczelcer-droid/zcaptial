@@ -24,37 +24,24 @@
 </head>
 <body>
 
-  <script>
-  // === PASSWORD GATE v1.0 === //
-  (function () {
-    const PASSWORD = 'printmoney';  // ← Change once, works everywhere
-    const MAX_ATTEMPTS = 3;
-    let attempts = 0;
-
-    function ask() {
-      const input = prompt('🔐 Enter password:');
-      if (!input) return false;
-      attempts++;
-      if (input === PASSWORD) return true;
-      if (attempts >= MAX_ATTEMPTS) {
-        alert('❌ Too many attempts. Access denied.');
-        return false;
-      }
-      alert('❌ Incorrect. Try again.');
-      return ask();
-    }
-
-    if (!ask()) {
-      document.documentElement.innerHTML = `
-        <style>
-          body{font-family:Arial,sans-serif;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;}
-          h1{font-size:3rem;text-align:center;}
-        </style>
-        <h1>🔒 ACCESS DENIED</h1>
-      `;
-      throw new Error('Password failed');
-    }
-  })();
+ <script>
+/*  StatiCrypt-style password gate – password = "printmoney"  */
+(function(){
+  var correct = 'printmoney';
+  var attempts = 0;
+  while (true) {
+    var input = prompt('Enter password to view this page:');
+    if (!input) { alert('Cancelled.'); break; }
+    attempts++;
+    if (input === correct) { break; }
+    if (attempts >= 3) { alert('Too many wrong attempts.'); break; }
+    alert('Incorrect password.');
+  }
+  if (input !== correct) {
+    document.body.innerHTML = '<h1 style="text-align:center;margin-top:100px;">Access Denied</h1>';
+    throw new Error('Wrong password');
+  }
+})();
 </script>
 
   <!-- PAGE 1: PRETTY CASH PACKAGE -->
